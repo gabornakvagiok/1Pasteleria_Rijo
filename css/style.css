@@ -1,74 +1,121 @@
+
+.tipoLetra1{font-family: 'PT Mono', monospace;
+	font-family: 'PT Serif', serif;
+	}
+.centradoTexto{
+	text-align: center;
+}
+.gradiant{
+	background-image: linear-gradient(rgb(245, 23, 160),rgb(245, 86, 23));
+}
+
+
 /* INICIO MEDIA QUERY DESCKTOP */
 /*INICIO INDEX DESKTOP */
 @media only screen and (min-width: 1024px){
 
 	.gridContainerPadreIndex{
-    display: grid; 
-    grid-template-areas:
-   "header header"
-   "main main" 
-   "footer footer";
-	grid-template-columns: 25% 75%;
-	grid-template-rows: 10% 80% 10%;
-	}			
-	header{
- display: flex;
- grid-area: header;
- position: sticky;
- top: 0;
- padding: 10px; 
- background-color: rgb(224, 139, 11);
+		display: grid; 
+		grid-template-areas:
+		"header header header"
+		"main main main"
+		"img img img"
+		"footer footer footer";
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: repeat(5%, 1fr, 1fr, 1fr);
+		grid-column-gap: 0px;
+		grid-roW-gap: 0px;  
 	}
-	main{
- grid-area: main;
-	}
-	footer{
- grid-area: footer;
-	}
-	a{
- text-decoration: none;
- color: rgb(230, 11, 11);
-	}
- li{ 
- display: flex;
- list-style-type: none;
- padding: 25px;
- font-size: 25px;
- display: inline;
- justify-content: end;
-	}
+		
+		.header{
+			display: flex;
+			grid-area: header;
+			position: sticky;
+			top: 0;
+			padding: 0; 
+			background-color: rgb(245, 23, 160);
+		  }
+
+		  .main{
+			grid-area: main;
+			width: 100%;
+			height: 100%;
+			   
+		 }
+		 .footerIndex{
+			grid-area: footer;
+			padding-bottom: 20%;
+			margin-bottom: 10%;
+			background-color: rgb(153, 201, 20);
+			  
+		}
+		
+		nav ul li a{
+			text-decoration: none;
+			color:black;
+		   }
+
+		 li{ 
+			display: flex;
+			list-style-type: none;
+			padding: 25px;
+			font-size: 25px;
+			display: inline;
+			justify-content: end;
+		   }
+
+      .logoPast{
+	 transition: all 5s;
+      }
+
+     .logoPast:hover{
+		transform: translateY(150);	
+	   }
+	 
+	   .redesSociales {
+		text-align: center;
+	 }
+     
+	 
+    }
+}	
+
  /* FIN INDEX DESKTOP */
 
  /* INICIO CONTACTO DESKTOP */
 	.gridContainerPadreContacto{
-    display: grid; 
-    grid-template-areas:
-	"header"
-    "main" 
-    "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 50px 1fr 200px;
+		display: grid; 
+		grid-template-areas:
+		"header header header"
+		"main main main"
+		"img img img"
+		"footer footer footer";
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: repeat(5%, 1fr, 1fr, 1fr);
+		grid-column-gap: 0px;
+		grid-roW-gap: 0px;
 	}
-   header{
-   grid-area: header;
-  }
-  main{
-  grid-area: main;
-  }
-  footer{
-  grid-area: footer;
-  }
-	.gridContainerPadre{
 	
+   .header{
+   display: flex;
+  grid-area: header;
   position: sticky;
-  top: 100;
-  padding: 10px; 
-  background-color: rgb(79, 12, 187);
-	}  
-	h1{
-	   align-items: center;
-	}
-
+  top: 0;
+  padding: 0; 
+  background-color: rgb(245, 23, 160);
+  }
+  
+  .main{
+    grid-area: main;
+	width: 100%;
+	height: 100%;
+  }
+  .footer{
+  grid-area: footer;
+  background-color: rgb(211, 12, 12);
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  }
 	/* FIN CONTACTO DESKTOP */
 
 	/* INICIO NOSOTROS DESCKTOP */
@@ -80,9 +127,9 @@
  	"img img img"
  	"footer footer footer";
  	grid-template-columns: 33% 33% 33%;
- 	grid-template-rows: 100px 1fr 400px 200px;
+ 	grid-template-rows: 5% 33% 30% 20%;
 	}
-	header{
+	.header{
  	display: flex;
 	 grid-area: header;
  	position: sticky;
@@ -103,10 +150,9 @@
 	}
 	footer{
  	grid-area: footer;
- 	background-color: black;
 	}
  	nav ul li a{
- 	color: rgb(67, 209, 39);;
+ 	
 	}
 	li{
  	list-style-type: none;
@@ -121,14 +167,14 @@
 	/* FIN NOSOTROS DESCKTOP */
 	/* INICIO PRODUCTOS DESKTOP */
 	.gridContainerPadreProductos{
-	display: grid; 
-	grid-template-areas:
-	"header header header"
-	"main main main"
-	"img img img"
-	"footer footer footer";
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: 100px 1fr 400px 200px;
+		display: grid; 
+		grid-template-areas:
+		"header header header"
+		"main main main"
+		"img img img"
+		"footer footer footer";
+		grid-template-columns: 33% 33% 33%;
+		grid-template-rows: 10% 30% 30% 20%;
    }
    header{
 	display: flex;
@@ -149,10 +195,10 @@
    }
    footer{
 	grid-area: footer;
-	background-color: black;
+	
    }
 	nav ul li a{
-	color: rgb(67, 209, 39);;
+	
    }
    li{
 	list-style-type: none;
@@ -172,14 +218,14 @@
 
  /* INICIO SERVICIOS DESCKTOP */
 	.gridContainerPadreServicios{
-	display: grid; 
-	grid-template-areas:
-	"header header header"
-	"main main main"
-	"img img img"
-	"footer footer footer";
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: 100px 1fr 400px 200px;
+		display: grid; 
+		grid-template-areas:
+		"header header header"
+		"main main main"
+		"img img img"
+		"footer footer footer";
+		grid-template-columns: 33% 33% 33%;
+		grid-template-rows: 5% 30% 30% 20%;
    }
    header{
 	display: flex;
@@ -200,10 +246,9 @@
    }
    footer{
 	grid-area: footer;
-	background-color: black;
    }
 	nav ul li a{
-	color: rgb(67, 209, 39);;
+	
    }
    li{
 	list-style-type: none;
@@ -220,10 +265,12 @@
 /* FIN MEDIAQUERY DESCKTOP */
 
 /* -------------------------------------------------- */
-
 /* INICIO MEDIAQUERY TABLET */
+
+/*INICIO INDEX TABLET */
+
 @media only screen and (min-width: 769px) and (max-width: 1023px){
-	/*INICIO INDEX TABLET */
+	
  .gridContainerPadreIndex{
     display: grid; 
     grid-template-areas:
@@ -231,7 +278,7 @@
    "main main" 
    "footer footer";
 	grid-template-columns: 25% 75%;
-	grid-template-rows: 100px 1fr 500px;
+	grid-template-rows: 13% 1fr 20%;
 	}			
 	header{
  display: flex;
@@ -254,7 +301,7 @@
  li{ 
  display: flex;
  list-style-type: none;
- padding: 25px;
+ padding: 20px;
  font-size: 25px;
  display: inline;
  justify-content: end;
@@ -262,15 +309,15 @@
  
  /* FIN INDEX TABLET */
 
-  /* INICIO CONTACTO TABLET */
+/* INICIO CONTACTO TABLET */
  .gridContainerPadreContacto{
     display: grid; 
     grid-template-areas:
-	"header"
-    "main" 
-    "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 50px 1fr 200px;
+   "header header"
+   "main main" 
+   "footer footer";
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 13% 1fr 20%;
 	}
    header{
    grid-area: header;
@@ -281,10 +328,22 @@
   footer{
   grid-area: footer;
   }
+  a{
+	text-decoration: none;
+	color: rgb(230, 11, 11);
+	   }
+	li{ 
+	display: flex;
+	list-style-type: none;
+	padding: 20px;
+	font-size: 25px;
+	display: inline;
+	justify-content: end;
+	   }
 	.gridContainerPadre{
 	position: sticky;
     top: 100;
-    padding: 10px; 
+    padding: 0px; 
     background-color: rgb(79, 12, 187);
 	}  
 	
@@ -294,11 +353,11 @@
  .gridContainerPadreNosotros{
     display: grid; 
     grid-template-areas:
-	"header"
-    "main" 
-    "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 50px 1fr 200px;
+   "header header"
+   "main main" 
+   "footer footer";
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 13% 1fr 20%;
 	}
    header{
    grid-area: header;
@@ -309,6 +368,18 @@
   footer{
   grid-area: footer;
   }
+  a{
+	text-decoration: none;
+	color: rgb(230, 11, 11);
+	   }
+	li{ 
+	display: flex;
+	list-style-type: none;
+	padding: 20px;
+	font-size: 25px;
+	display: inline;
+	justify-content: end;
+	   }
 	.gridContainerPadre{
 	
   position: sticky;
@@ -316,19 +387,18 @@
   padding: 10px; 
   background-color: rgb(79, 12, 187);
 	}  
-	
-
  /* FIN NOSOTROS TABLET */
+
+
  /* INICIO PRODUCTOS TABLET */
  .gridContainerPadreProductos{
 	display: grid; 
-	grid-template-areas:
-	"header header header"
-	"main main main"
-	"img img img"
-	"footer footer footer";
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: 100px 1fr 400px 200px;
+    grid-template-areas:
+   "header header"
+   "main main" 
+   "footer footer";
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 13% 1fr 20%;
   }
    header{
 	display: flex;
@@ -375,13 +445,12 @@
  /*INICIO SERVICIOS TABLET*/
  .gridContainerPadreServicios{
 	display: grid; 
-	grid-template-areas:
-	"header header header"
-	"main main main"
-	"img img img"
-	"footer footer footer";
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: 100px 1fr 400px 200px;
+    grid-template-areas:
+   "header header"
+   "main main" 
+   "footer footer";
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 13% 1fr 20%;
    }
    header{
 	display: flex;
@@ -435,27 +504,29 @@
 	.gridContainerPadreIndex{
 		display: grid; 
 		grid-template-areas:
-	   "header header"
-	   "main main" 
-	   "footer footer";
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 13% 1fr 1fr;
-		}			
-		header{
-	 display: flex;
-	 grid-area: header;
-	 position: sticky;
-	 top: 0;
-	 padding: 0px; 
-	 background-color: rgb(224, 139, 11);
+	   "header"
+	   "main" 
+	   "footer";
+		grid-template-columns: 1fr;
+		grid-template-rows:  5%, 50%, 45%;
+		grid-column-gap: 0px;
+		grid-roW-gap: 0px;
 		}
-		main{
-	 grid-area: main;
-	 width: 768px;
+
+	    .header {
+		display: flex;
+		top: 0;
+	    padding: 10px; 
+	    background-color: rgb(224, 139, 11);
+		grid-area: header;
 		}
-		footer{
-	 grid-area: footer;
+	    .main {
+		grid-area: main; 
+	    }
+		.footer { grid-area: footer; 
 		}
+			
+    
 		a{
 	 text-decoration: none;
 	 color: rgb(230, 11, 11);
@@ -463,8 +534,8 @@
 	 li{ 
 	 display: flex;
 	 list-style-type: none;
-	 padding: 10px;
-	 font-size: 25px;
+	 padding: 5px;
+	 font-size: 15px;
 	 display: inline;
 	 justify-content: end;
 		}
@@ -475,31 +546,44 @@
 	 .gridContainerPadreContacto{
 		display: grid; 
 		grid-template-areas:
-		"header"
-		"main" 
-		"footer";
-		grid-template-columns: 100%;
-		grid-template-rows: 50px 1fr 200px;
+	   "header"
+	   "main" 
+	   "footer";
+		grid-template-columns: 1fr;
+		grid-template-rows:  5%, 50%, 45%;
+		grid-column-gap: 0px;
+		grid-roW-gap: 0px;
 		}
-	   header{
+	   .header{
 	   grid-area: header;
 	  }
-	  main{
+	  .main{
 	  grid-area: main;
 	  }
-	  footer{
+	  .footer{
 	  grid-area: footer;
 	  }
 		.gridContainerPadre{
 		
-	  position: sticky;
-	  top: 100;
-	  padding: 10px; 
-	  background-color: rgb(79, 12, 187);
-		}  
-		h1{
-		   align-items: center;
+	     position: sticky;
+	  		top: 0px;
+	  		padding: 0px; 
+	  		background-color: rgb(79, 12, 187);
+		} 
+	    a{
+			text-decoration: none;
+			color: rgb(230, 11, 11);
 		}
+		li{ 
+			display: flex;
+			list-style-type: none;
+			padding: 5px;
+			font-size: 15px;
+			display: inline;
+			justify-content: end;
+		}
+		
+		
 		
 		/* FIN CONTACTO MOBILE */
 	
@@ -507,11 +591,11 @@
 	.gridContainerPadreNosotros{
 		display: grid; 
 		grid-template-areas:
-	   "header header"
-	   "main main" 
-	   "footer footer";
-		grid-template-columns: 50% 50%;
-		grid-template-rows: 5% 1fr 1fr;
+	   "header"
+	   "main" 
+	   "footer";
+		grid-template-columns: 100%;
+		grid-template-rows:  5%, 50%, 45%;
 		}			
 		header{
 	 display: flex;
@@ -535,7 +619,7 @@
 	 li{ 
 	 display: flex;
 	 list-style-type: none;
-	 padding: 0px;
+	 padding: 5px;
 	 font-size: 15px;
 	 display: inline;
 	 justify-content: end;  
@@ -546,11 +630,11 @@
 	   .gridContainerPadreProductos{
 		display: grid; 
 		grid-template-areas:
-	   "header header"
-	   "main main" 
-	   "footer footer";
+	   "header"
+	   "main" 
+	   "footer";
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 5% 1fr 1fr;
+		grid-template-rows:  5%, 50%, 45%;
 		}			
 		header{
 	 display: flex;
@@ -573,8 +657,8 @@
 	 li{ 
 	 display: flex;
 	 list-style-type: none;
-	 padding: 10px;
-	 font-size: 25px;
+	 padding: 5px;
+	 font-size: 15px;
 	 display: inline;
 	 justify-content: end;  
 	 }
@@ -585,18 +669,18 @@
 	   .gridContainerPadreServicios{
 		display: grid; 
 		grid-template-areas:
-	   "header header"
-	   "main main" 
-	   "footer footer";
+	   "header"
+	   "main" 
+	   "footer";
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 5% 1fr 1fr;
+		grid-template-rows:  5%, 50%, 45%;
 		}			
 		header{
 	 display: flex;
 	 grid-area: header;
 	 position: sticky;
 	 top: 0;
-	 padding: 10px; 
+	 padding: 0px; 
 	 background-color: rgb(224, 139, 11);
 		}
 	   main{
@@ -613,12 +697,12 @@
 	 li{ 
 	 display: flex;
 	 list-style-type: none;
-	 padding: 10px;
-	 font-size: 25px;
+	 padding: 5px;
+	 font-size: 15px;
 	 display: inline;
 	 justify-content: end;  
 	 }
-
+    /* Fin SERVICIOS MOBILE */
 }	
 
 			

@@ -11,7 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="css/style.css" rel="stylesheet" type="text/css">
+
 </head>
 <!-- fin el head -->
 <!-- inicio del body -->
@@ -20,61 +23,80 @@
     <!-- Inicio del header con nav(img,ul,li) mas ,h1,h3,button. -->
     <div class="gridContainerPadreIndex">
 
-        <header class=>
-            <div>
-                <h3><a href="index.html"><img src="assets/logo.jpg"></a></h3>
-
+        <header class="header gradiant">
+            <div class="logoPast ">
+                <a href="index.html"><img src="assets/logo.jpg"></a>
             </div>
-            <nav>
-                <ul class=" flex flex-justify">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/productos.html">Productos</a></li>
-                    <li><a href="pages/servicios.html">Servicios</a></li>
-                    <li><a href="pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <div>
+                <nav>
+                    <ul class=" flex flex-justify">
+                        <li class="anclasIndex"><a href="index.html">Home</a></li>
+                        <li class="anclasIndex"><a href="pages/productos.html">Productos</a></li>
+                        <li class="anclasIndex"><a href="pages/servicios.html">Servicios</a></li>
+                        <li class="anclasIndex"><a href="pages/nosotros.html">Nosotros</a></li>
+                        <li class="anclasIndex"><a href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
         </header>
 
 
         <!-- Inicio del main con video y paralax imagen. -->
-        <main>
-            <h1 class="estilos__h1">
-                Bienvenidos, A nuestra pasteleria !
+        
+        <main class="main">
 
-            </h1>
-            <h3 class="estilos__h3">
-                con servicio a domicilio.
-            </h3>
-
-            <button>Realiza tu pedido</button>
-
+            <div class=" centradoTexto">
+                <h1 class="estilos__h1 animate__animated animate__bounceIn">
+                    !Bienvenidos a nuestra pasteleria !
+                </h1>
+            </div>
+            
             <iframe src="https://www.youtube-nocookie.com/embed/JQ268qwjXnI?start=35" title="YouTube video player"
-                frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen height="100%" width="100%">
+                frameborder="5"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen height="80%" width="100%">
             </iframe>
 
-        </main>
-        <!-- Fin del main con video. -->
+            
 
-        
-        <!-- Inicio del footer con ul,li,p,p -->
-        <footer>
             <div>
-                <ul class="flex-around">
-                    <li class="social-facebook"><a href="#">facebook<i class=""></i></a></li>
-                    <li class="social-twitter"><a href="#">twiter<i class=""></i></a></li>
-                    <li class="social-google"><a href="#">google<i class="fa fa-google-plus"></i></a></li>
-                    <li class="social-dribbble"><a href="#">dribble<i class="fa fa-dribbble"></i></a></li>
-                </ul>
-                <p>Este es el footer con ul Y li tambien en construccion</p>
-                <p>Pasteleria, 18 de julio 3849,<br />
-                    &copy;Copyright 2021 - Pasteleria. Reservados todos los derechos. | Diseñado por <a
-                        href="contacto.html">Fulano de tal pastelero</a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fuga id rem reprehenderit autem a
+                    ipsum rerum sed, aspernatur sequi consequuntur voluptatum optio neque libero!
                 </p>
             </div>
-        </footer>
-        <!-- Fin del footer ul,li,p,p -->
+            
+            <div>
+                <img src="assets/2.jpg" alt="imagen pasteleria" width="100%">
+            </div>
+            
+            <div>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, pariatur, adipisci cumque quam
+                saepe officiis placeat a corrupti ullam sit delectus nisi, harum minima! Eius temporibus nulla
+                perspiciatis eaque nemo itaque unde ab laudantium voluptas necessitatibus labore dolore rem velit
+                consectetur blanditiis saepe accusamus ut ratione tempore et voluptatum, eligendi facilis cupiditate.
+                Dolorem, repellendus animi quis ipsam, minima vel adipisci autem corrupti doloribus, debitis asperiores
+                accusantium temporibus pariatur. Debitis, libero!</p><br>
+
+            </div>
+            
+            <footer class="footer gradiant">
+                <div>
+                    <ul>
+                        <li><a href="#"><i class=""></i></a></li>
+                        <li class="social-twitter"><a href="#"><i class=""></i></a></li>
+                        <li class="social-google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="social-dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                    <p>Este es el footer con ul Y li tambien en construccion</p>
+                    <p>Pasteleria, 18 de julio 3849,<br />
+                        &copy;Copyright 2021 - Pasteleria. Reservados todos los derechos. | Diseñado por <a
+                            href="contacto.html">Fulano de tal pastelero</a>
+                    </p>
+                </div>
+            </footer>
+        </main>
+        
     </div>
 </body>
 <!-- fin del body -->

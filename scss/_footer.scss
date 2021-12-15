@@ -1,0 +1,141 @@
+@media only screen and (min-width: 1024px){
+    .gridContainerPadreIndex {
+    display: grid;
+    grid-template-areas: "header header header"
+    "main main main"
+    "img img img"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5%, 1fr, 1fr, 1fr);
+    grid-column-gap: 0px;
+    grid-roW-gap: 0px; }
+    .footerIndex {
+    grid-area: footer;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    }
+
+
+    .gridContainerPadreContacto {
+    display: grid;
+    grid-template-areas: "header header header"
+ "main main main"
+ "img img img"
+ "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5%, 1fr, 1fr, 1fr);
+    grid-column-gap: 0px;
+    grid-roW-gap: 0px; }
+    .footer {
+    grid-area: footer;
+    background-color: #0cd36f;
+    padding-bottom: 0%;
+    margin-bottom: 0%; }
+
+
+    .gridContainerPadreNosotros {
+    display: grid;
+    grid-template-areas: "header header header"
+ "main main main"
+ "img img img"
+ "footer footer footer";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 5% 33% 30% 20%; }
+    footer {
+    grid-area: footer; }
+
+
+    .gridContainerPadreProductos {
+    display: grid;
+    grid-template-areas: "header header header"
+ "main main main"
+ "img img img"
+ "footer footer footer";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10% 30% 30% 20%; }
+  footer {
+    grid-area: footer; }
+
+
+ .gridContainerPadreServicios {
+    display: grid;
+    grid-template-areas: "header header header"
+ "main main main"
+ "img img img"
+ "footer footer footer";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 5% 30% 30% 20%; }
+  footer {
+    grid-area: footer; }
+}
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+
+    .gridContainerPadreIndex {
+    display: grid;
+    grid-template-areas: "header header"
+ "main main" 
+ "footer footer";
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 13% 1fr 20%; }
+
+    footer {
+    grid-area: footer; } 
+
+    .gridContainerPadreContacto {
+    display: grid;
+    grid-template-areas: "header header"
+ "main main" 
+ "footer footer";
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 13% 1fr 20%; }
+
+    footer {
+    grid-area: footer; }
+
+    .gridContainerPadreNosotros {
+    display: grid;
+    grid-template-areas: "header header"
+ "main main" 
+ "footer footer";
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 13% 1fr 20%;
+     }
+
+     footer {
+    grid-area: footer; }
+
+    .gridContainerPadreProductos {
+    display: grid;
+    grid-template-areas: "header header"
+ "main main" 
+ "footer footer";
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 13% 1fr 20%; }
+
+    footer {
+    grid-area: footer;
+    background-color: black; }
+
+    .gridContainerPadreServicios {
+    display: grid;
+    grid-template-areas: "header header"
+ "main main" 
+ "footer footer";
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 13% 1fr 20%; }
+
+    footer {
+    grid-area: footer;
+    background-color: black; }
+
+
+
+}
+  
+
+
+

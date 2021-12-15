@@ -1,6 +1,9 @@
-.tipoLetra1{font-family: 'PT Mono', monospace;
-	font-family: 'PT Serif', serif;
-	}
+@import "contenido";
+@import "footer";
+@import "header";
+@import "main";
+@import "boton";
+
 .centradoTexto{
 	text-align: center;
 }

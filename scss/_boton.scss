@@ -1,0 +1,17 @@
+.boton{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(245, 23, 160);
+    text-align: center;
+    color:black
+    border-radius 20px;
+    border:1px solid black;
+}
+.boton--aceptar{
+    @extend .boton;
+    background-color: #f55617;
+}
+.boton--cancelar{
+   @extend .boton;
+   background-color: red;
+}
